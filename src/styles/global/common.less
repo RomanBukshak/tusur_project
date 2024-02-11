@@ -50,3 +50,30 @@ img {
     margin-bottom: 95px;
   }
 }
+
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+  font-family: @font1;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: #6C6C6C;
+  }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent
+  }
+}
