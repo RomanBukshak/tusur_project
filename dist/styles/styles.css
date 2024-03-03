@@ -398,6 +398,26 @@ textarea:focus::placeholder {
 .reserve__legend {
   grid-area: legend;
 }
+.reserve__scheme-wrapper {
+  position: relative;
+  width: 100%;
+}
+.reserve__scheme-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 51.15384%;
+}
+.reserve__scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.event {
+  padding: 40px 0 150px;
+}
 .events {
   padding: 140px 0 100px;
 }
@@ -411,9 +431,6 @@ textarea:focus::placeholder {
   width: 405px;
   max-width: 100%;
   min-width: 280px;
-}
-.event {
-  padding: 40px 0 150px;
 }
 .page-header {
   position: fixed;
@@ -816,6 +833,19 @@ textarea:focus::placeholder {
 .check__label--s {
   font-size: 14px;
   line-height: 19px;
+}
+.check--red {
+  color: #bc3324;
+}
+.check--red .check__mark {
+  border-color: #bc3324;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #bc3324;
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .radio {
   display: -webkit-box;
